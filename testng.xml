@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <parameter name="username" value="kamesh2">
+  <parameter name="password" value="rajesh22"></parameter>
+  </parameter>
+  <groups>
+  <run>
+  <include name="default">
+  <include name="smoke">
+  <include name="sanity">
+  </include>
+  </include>
+  </include>
+  </run>
+  </groups>
+    <classes>
+      <class name="com.project.session.MobilePurchase"/>
+      <class name="com.project.session.NewTest"/>
+   
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
